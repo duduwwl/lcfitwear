@@ -38,7 +38,7 @@ h1,h2,h3{font-family:var(--f-d);font-weight:500;line-height:1.02;letter-spacing:
 @media(hover:none){.cursor{display:none}}
 
 /* ---------- header ---------- */
-.hdr{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem 0;mix-blend-mode:difference;color:#fff}
+.hdr{position:absolute;top:0;left:0;right:0;z-index:100;padding:1.1rem 0;mix-blend-mode:difference;color:#fff}
 .hdr .wrap{display:flex;align-items:center;justify-content:space-between}
 .hdr .logo{font-family:var(--f-d);font-size:1.3rem;color:#fff}
 .hdr nav{display:flex;gap:2.2rem}
@@ -124,7 +124,7 @@ h1,h2,h3{font-family:var(--f-d);font-weight:500;line-height:1.02;letter-spacing:
 .qv-btn svg{width:18px;height:18px}
 .p-info{display:flex;justify-content:space-between;align-items:baseline;padding-top:.9rem;gap:1rem}
 .p-info h3{font-size:1.22rem;font-weight:500}
-.p-info .cat{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:block;margin-bottom:.15rem}
+.p-info .cat{position:static;border-radius:0;overflow:visible;aspect-ratio:auto;background:none;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-2);display:block;margin-bottom:.15rem}
 .p-price{font-family:var(--f-d);font-size:1.2rem;text-align:right;white-space:nowrap}
 .p-price s{display:block;font-size:.76rem;color:var(--ink-2);font-family:var(--f-u)}
 
@@ -150,7 +150,7 @@ h1,h2,h3{font-family:var(--f-d);font-weight:500;line-height:1.02;letter-spacing:
 .mv-media{position:relative;min-height:420px;background:var(--sand)}
 .mv-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 .mv-body{padding:clamp(1.4rem,3vw,2.4rem);display:flex;flex-direction:column;gap:.9rem}
-.mv-body .cat{font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);font-weight:700}
+.mv-body .cat{position:static;border-radius:0;overflow:visible;aspect-ratio:auto;background:none;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose);font-weight:700}
 .mv-body h3{font-size:clamp(1.6rem,3vw,2.2rem)}
 .mv-body p{color:var(--ink-2);font-size:.95rem}
 .mv-price{font-family:var(--f-d);font-size:1.7rem}
@@ -332,7 +332,7 @@ h1,h2,h3{font-family:var(--f-d);font-weight:500;line-height:1.02;letter-spacing:
   .sec-head{flex-direction:column;align-items:flex-start}
   .ph .ph-imgs img{height:86px}
   .h-media .m3{display:none}
-  .filters{top:58px}
+  .filters{top:0}
 }
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}
